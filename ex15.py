@@ -31,9 +31,9 @@ txt_again = open(file_again)
 print txt_again.read()
 
 # closes the second file
-
 txt_again.close()
 
 # study drill #1: done
 # 4: done
 # 5: done
+# 7: done
