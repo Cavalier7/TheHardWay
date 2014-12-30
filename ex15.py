@@ -14,11 +14,14 @@ print "Here's your file %r:" % filename
 print txt.read()
 
 # prompts the user to input the name of the file again
-print "Type the filename again:"
-file_again = raw_input(">")
+# print "Type the filename again:"
+# file_again = raw_input(">")
 
 # opens the inputted filename
-txt_again = open(file_again)
+# txt_again = open(file_again)
 
 # prints the contents of the second file
-print txt_again.read()
+# print txt_again.read()
+
+# study drill #1: done
+
