@@ -17,6 +17,9 @@ print "Here's your file %r:" % filename
 # reads the file
 print txt.read()
 
+# closes the file
+txt.close()
+
 # prompts the user to input the name of the file again
 print "Type the filename again:"
 file_again = raw_input(">")
@@ -26,6 +29,10 @@ txt_again = open(file_again)
 
 # prints the contents of the second file
 print txt_again.read()
+
+# closes the second file
+
+txt_again.close()
 
 # study drill #1: done
 # 4: done
