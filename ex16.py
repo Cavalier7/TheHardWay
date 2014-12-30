@@ -29,5 +29,14 @@ target.write("\n")
 target.write(line3)
 target.write("\n")
 
-print "And finally, we close it."
 target.close()
+
+print "Now we'll print the new contents of the file that you just input."
+
+new_target = open(filename)
+print new_target.read()
+
+print "And now we'll close it."
+new_target.close()
+
+# 2: done
