@@ -22,15 +22,10 @@ line3 = raw_input("line 3: ")
 
 print "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write(line1 + "\n" + line2 + "\n" + line3 + "\n")
 
 target.close()
-
+    
 print "Now we'll print the new contents of the file that you just input."
 
 new_target = open(filename)
@@ -40,3 +35,4 @@ print "And now we'll close it."
 new_target.close()
 
 # 2: done
+# 3: done
