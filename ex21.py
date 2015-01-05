@@ -26,8 +26,8 @@ print "Age: %d\nHeight: %d\nIQ: %d" % (age, height, iq)
 
 
 
-# A puzzle for extra credit, type it in anyway.
-# print "Here is a puzzle."
+A puzzle for extra credit, type it in anyway.
+print "Here is a puzzle."
 
-# what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
-# print "That becomes: ", what\n, "Can you do it by hand?"
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+print "That becomes: ", what\n, "Can you do it by hand?"
