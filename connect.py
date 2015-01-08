@@ -21,27 +21,28 @@ create_board()
 
 print board
 
-print_board()
-
-# check to see if input is an integer 1 through 7
-
-#def check_input(move):
-    # try:
-        
+print_board()   
 
 # check to see if a move is a valid integer move
 def check_board(move):
-    for row in range(height):
-        try: 
-            board[row][int(move)-1] == '0'
-            return True
+    for row in range(height,0,-1):
+        try:
+            guess = board[row][int(move)-1]
+            if  guess == '0'
+                guess = player
         except:
             pass
+            
+# make the move on the board
+def make_move(move):
+    board[row]
 
-print check_board(0)
-print check_board(10)
-print check_board('a')
-print check_board(True)
+print check_board('0')
+print check_board('10')
+print check_board('7')
+print check_board('2')
+
+print_board()
 
 # prompt user for a move
 #while True:
