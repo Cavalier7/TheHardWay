@@ -14,7 +14,7 @@ def get_bucket(aMap, key): # creates functions that takes two arguments
     bucket_id = hash_key(aMap, key) # imports returned bucket from hash_key()
     return aMap[bucket_id] # returns specific bucket where a key might be found
 
-def get_slot(aMap, key, default=None) # new function that accepts three arguments
+def get_slot(aMap, key, default=None): # new function that accepts three arguments
     """
     Returns the index, key, and value of a slot found in a bucket.
     Returns -1, key, and default (None if not set), when not found.
@@ -23,7 +23,7 @@ def get_slot(aMap, key, default=None) # new function that accepts three argument
     
     for i, kv in enumerate(bucket):
         k, v = kv
-        if key = k:
+        if key == k:
             return i, k, v
     
     return -1, key, default
@@ -51,11 +51,11 @@ def delete(aMap, key):
     
     for i in xrange(len(bucket)):
         k, v = bucket[i]
-        if key = k:
+        if key == k:
             del bucket[i]
             break
         
-del list(aMap):
+def list(aMap):
     """Prints out what's in the Map."""
     for bucket in aMap:
         if bucket:
